@@ -609,6 +609,15 @@ footer .link-group a:hover {
     transform: rotate(360deg);
 }
 
+.social-links .github {
+    color: #555555;
+}
+
+.social-links .github:hover {
+    background-color: #555555;
+    transform: rotate(360deg);
+}
+
 .social-links .behance {
     color: #255afc;
 }
