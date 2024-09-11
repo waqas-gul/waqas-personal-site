@@ -651,13 +651,17 @@ footer .Copyright {
 
 
     /* navbar */
-    .navbar {
-        position: relative;
+    
+        .navbar {
+        width: 100%;
+        position: fixed;
+
+
     }
 
     .navbar .btns {
         position: absolute;
-        top: 26%;
+        top: 25%;
         left: 90%;
     }
 
@@ -754,7 +758,9 @@ footer .Copyright {
 
 
     /* ////////////////////////////////// */
-
+ .home {
+        margin-top: 25px;
+    }
 
     .home h2 {
         font-size: 2rem;
