@@ -33,6 +33,10 @@ body {
     color: #CAF0F8;
 }
 
+.navbar-nav i {
+    background-color: #ffffff;
+}
+
 
 /* styling navbar links  */
 .navbar-nav a {
