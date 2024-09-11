@@ -658,6 +658,24 @@ footer .Copyright {
 
 
     }
+     .navbar-nav a:after {
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 50%;
+        top: 55px;
+        position: absolute;
+        background: #ffffff;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+    }
+
+    .navbar-nav a:hover:after {
+        width: 100%;
+        left: 0;
+    }
 
     .navbar .btns {
         position: absolute;
