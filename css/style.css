@@ -23,6 +23,12 @@ html, body {
 }
 
 
+.nav-menu i {
+    color: #ffffff;
+   
+}
+
+
 /* styling menu icon */
 .nav-menu {
     border: none;
