@@ -143,3 +143,22 @@ mybutton.addEventListener("click", function () {
 function openWhatsApp() {
   window.open('https://wa.me/+923488446186', '_blank');
 }
+
+// show and hide the nav menu
+const menu = document.querySelector(".nav_menu");
+const menuBtn = document.querySelector("#open_menu_btn");
+const closeBtn = document.querySelector("#close_menu_btn");
+
+//  open menu 
+menuBtn.addEventListener("click", () => {
+  menu.style.display = "flex";
+  closeBtn.style.display = "inline-block";
+  menuBtn.style.display = "none";
+})
+
+//  close nav menu 
+closeBtn.addEventListener("click", () => {
+  menu.style.display = "none";
+  closeBtn.style.display = "none";
+  menuBtn.style.display = "inline-block";
+})
