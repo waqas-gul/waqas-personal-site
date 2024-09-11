@@ -38,13 +38,18 @@
 <body>
   <!-- navbar starts -->
   <nav id="navbar-top" class="navbar navbar-expand-lg navbar-light sticky-top">
-    <div class="container-fluid px-5">
+    <div class="btns">
+      <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" id="open_menu_btn"><i
+          class="fa-solid fa-bars nav-menu d-md-none"></i></button>
+    
+      <button id="close_menu_btn" data-bs-toggle="collapse" data-bs-target="#navbarNav" id="open_menu_btn"><i
+          class="fa-solid fa-xmark nav-menu d-md-none"></i></button>
+    </div>
+    <div class="container-fluid px-5 nav_container">
       <a class="navbar-brand fw-bold fs-2" href="#" style="color: #ffffff">WGdeveloper</a>
-      <button class="nav-menu d-md-none " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <i class="bi bi-menu-button-wide"></i>
-      </button>
-      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-        <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
+      <div id="navbarNav">
+      
+        <ul class="navbar-nav gap-4 nav_menu" style="font-size: 1.1rem">
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="#">Home</a>
           </li>
@@ -64,13 +69,16 @@
             <a class="nav-link" href="#blog">Blog</a>
           </li>
         </ul>
+        
       </div>
       <a href="#contact" style="text-decoration: none;"><button
           class="c-btn  ms-4 py-2 px-4 rounded-pill d-none d-md-block">Contact</button></a>
 
     </div>
+  
   </nav>
-  <!-- navbar ends here -->
+
+
 
   <!-- home section starts  -->
   <section class="home pt-5 pb-5" id="home">
@@ -81,8 +89,10 @@
           Hello! I Am <br /><span class="c-orange">Waqas Gul</span>
         </h2>
         <p class="text-muted">
-          I'm a web developer with 5 years of experience in creating fully responsive websites and handling backend development.
-          Proficient in the MERN stack (MongoDB, Express, React, Node.js), as well as JavaScript and PHP, I build dynamic and
+          I'm a web developer with 5 years of experience in creating fully responsive websites and handling backend
+          development.
+          Proficient in the MERN stack (MongoDB, Express, React, Node.js), as well as JavaScript and PHP, I build
+          dynamic and
           user-friendly web solutions.
         </p>
 
@@ -746,8 +756,8 @@
           </div>
 
           <div class="mb-3 input-tag">
-            <textarea class="form-control input" required id="exampleFormControlTextarea1" placeholder="Message" rows="5" id="message"
-              name="message"></textarea>
+            <textarea class="form-control input" required id="exampleFormControlTextarea1" placeholder="Message" rows="5"
+              id="message" name="message"></textarea>
           </div>
           <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill" type="submit">
             Submit
