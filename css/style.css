@@ -6,7 +6,8 @@ body {
     overflow-x: hidden;
     /* Prevent horizontal scrolling */
 }
-html, body {
+html,
+body {
     width: 100%;
     max-width: 100%;
     overflow-x: hidden;
@@ -23,20 +24,15 @@ html, body {
 }
 
 
-.nav-menu i {
-    color: #ffffff;
-   
-}
-
-
 /* styling menu icon */
 .nav-menu {
     border: none;
     /* background-color: #fff; */
-     background-color: #03045E;
+    background-color: #03045E;
     font-size: 1.5rem;
     color: #CAF0F8;
 }
+
 
 /* styling navbar links  */
 .navbar-nav a {
@@ -635,6 +631,12 @@ footer .link-group a:hover {
 footer .Copyright {
     color: #CAF0F8;
 }
+@media screen and (max-width: 1024px) {
+    /* Your tablet-specific styles go here */
+}
+
+
+
 
 @media screen and (max-width: 480px) {
 
