@@ -687,6 +687,8 @@ footer .Copyright {
 
     }
 
+
+
     .skill .heading {
         display: flex;
         flex-direction: column;
@@ -695,7 +697,11 @@ footer .Copyright {
     }
 
     .skill .heading h3 {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
+    }
+
+    .skill .heading p {
+        margin: 0 1rem 0.4rem 1rem;
     }
 
     .testimonial .nextprev-btn {
@@ -710,8 +716,8 @@ footer .Copyright {
 
     .contact-info {
 
-        margin-left: 1rem;
-        width: 90%;
+        margin-left: 0.5rem;
+        width: 100%;
 
         display: flex;
         flex-direction: column;
