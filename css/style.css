@@ -635,3 +635,110 @@ footer .link-group a:hover {
 footer .Copyright {
     color: #CAF0F8;
 }
+
+@media screen and (max-width: 480px) {
+
+
+    .home h2 {
+        font-size: 2rem;
+        line-height: 4rem;
+    }
+
+    .home h2 span {
+        font-size: 2.5rem;
+    }
+
+    .hire-me {
+        top: 40px;
+    }
+
+    .waqas {
+
+        position: relative;
+        top: 50px;
+    }
+
+    .heading h3 {
+        margin: 2.2rem;
+        font-size: 2rem;
+    }
+
+    .service-card .img i {
+        font-size: 2.5rem;
+    }
+
+    @keyframes bounce-animation {
+
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
+            transform: translateY(0);
+        }
+
+        40% {
+            transform: translateY(-22px);
+        }
+
+        60% {
+            transform: translateY(-15px);
+        }
+
+    }
+
+    .skill .heading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .skill .heading h3 {
+        font-size: 1.6rem;
+    }
+
+    .testimonial .nextprev-btn {
+        margin-top: 2rem;
+    }
+
+
+
+    .contact h3 {
+        margin-bottom: 0;
+    }
+
+    .contact-info {
+
+        margin-left: 1rem;
+        width: 90%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    .contact-form {
+
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+    form .input-tag {
+        width: 100%;
+
+    }
+
+    form .input-tag .input {
+        width: 100%;
+    }
+
+
+}
