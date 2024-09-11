@@ -24,6 +24,7 @@ body {
 }
 
 
+
 /* styling menu icon */
 .nav-menu {
     border: none;
@@ -34,9 +35,6 @@ body {
 }
 
 
-
-
-/* styling navbar links  */
 .navbar-nav a {
     color: #ffffff;
     position: relative;
@@ -90,7 +88,7 @@ body {
 
 
 .home h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     line-height: 4rem;
 }
 
@@ -580,7 +578,7 @@ footer .link-group a:hover {
     border: none;
     margin-right: 1rem;
     font-size: 1.2rem;
-     background-color: #ffffff;
+    background-color: #ffffff;
     padding: 14px 15px 10px 15px;
 }
 
@@ -609,6 +607,9 @@ footer .link-group a:hover {
     transform: rotate(360deg);
 }
 
+.social-links .behance {
+    color: #255afc;
+}
 .social-links .github {
     color: #555555;
 }
@@ -616,10 +617,6 @@ footer .link-group a:hover {
 .social-links .github:hover {
     background-color: #555555;
     transform: rotate(360deg);
-}
-
-.social-links .behance {
-    color: #255afc;
 }
 
 .social-links .behance:hover {
@@ -650,6 +647,113 @@ footer .Copyright {
 
 
 @media screen and (max-width: 480px) {
+    /* ///////////////////////// */
+
+
+    /* navbar */
+    .navbar {
+        position: relative;
+    }
+
+    .navbar .btns {
+        position: absolute;
+        top: 26%;
+        left: 90%;
+    }
+
+
+
+    nav button {
+
+        display: inline-block;
+        background: transparent;
+        font-size: 1.8rem;
+        color: #ffffff;
+        cursor: pointer;
+
+        border: none;
+
+    }
+
+    nav button#close_menu_btn {
+        display: none;
+    }
+
+    .nav_menu {
+        position: fixed;
+        top: 5rem;
+        right: 5%;
+        height: fit-content;
+        width: 18rem;
+        flex-direction: column;
+        gap: 0;
+        display: none;
+    }
+
+    .nav_menu li {
+        width: 100%;
+        height: 5.8rem;
+        animation: animateNavitem 400ms linear forwards;
+        transform-origin: top right;
+        opacity: 0;
+
+    }
+
+    .nav_menu li:nth-child(2) {
+        animation-delay: 200ms;
+
+    }
+
+    .nav_menu li:nth-child(3) {
+        animation-delay: 400ms;
+
+    }
+
+    .nav_menu li:nth-child(4) {
+        animation-delay: 600ms;
+
+    }
+
+    /* animiation of nabar */
+    @keyframes animateNavitem {
+        0% {
+            transform: rotateZ(-90deg) rotateX(90deg) scale(.1);
+
+        }
+
+        100% {
+            transform: rotateZ(0deg) rotateX(0deg) scale(1);
+            ;
+            opacity: 1;
+
+        }
+
+    }
+
+    .nav_menu li a {
+        background: #03045E;
+        box-shadow: -4rem 6rem 10rem rgba(0, 0, 0, 0.6);
+        height: 100%;
+        width: 100%;
+        display: grid;
+        opacity: 0.7;
+        place-items: center;
+        transition: all;
+    }
+
+    .nav_menu li a:hover {
+        background: #0077B6;
+        color: #ffffff;
+        opacity: 0.7;
+
+        transform: scale(1.05);
+        font-size: 1.2rem;
+    }
+
+
+
+
+    /* ////////////////////////////////// */
 
 
     .home h2 {
